@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts-bg" id="hearts"></div>
+
+<!-- SCREEN 1: SECRET CODE -->
+<section class="screen active" id="screen1">
+  <div class="card">
+    <div class="big-heart">💗</div>
+    <h1>Someone has a special message for you ❤️</h1>
+    <p>Enter the secret code to unlock your surprise.</p>
+    <input type="password" id="codeInput" inputmode="numeric" placeholder="Secret code" autocomplete="off">
+    <button class="btn" id="enterBtn">ENTER</button>
+    <p class="error" id="errorMsg"></p>
+  </div>
+</section>
+
+<!-- SCREEN 2: OPEN -->
+<section class="screen" id="screen2">
+  <div class="card">
+    <div class="pulse-heart">❤️</div>
+    <h1>You've unlocked something special! 💕</h1>
+    <button class="btn big" id="openBtn">OPEN ❤️</button>
+  </div>
+</section>
+
+<!-- SCREEN 3: POPUP -->
+<div class="overlay" id="overlay">
+  <div class="popup">
+    <div class="popup-hearts"></div>
+    <div class="letter">
+      <p>I miss you TRISHNA ❤️</p>
+      <p>I love you bestie.</p>
+      <p>Send me your pic 😘</p>
+      <p class="sign">Yours, PROUD BF KRISTEN ❤️</p>
+    </div>
+    <div class="choices">
+      <button class="btn love" id="loveBtn">I LOVE YOU TOO ❤️</button>
+      <button class="btn dont" id="dontBtn">I DON'T</button>
+    </div>
+    <p class="dont-msg" id="dontMsg"></p>
+    <button class="btn close" id="closeBtn">CLOSE</button>
+    <div class="final-msg" id="finalMsg" style="display:none">
+      <div style="font-size:54px">🥰💕</div>
+      <p style="color:#fff;font-size:22px;font-weight:700;margin-top:10px">Yay! She loves you back!</p>
+      <p style="color:#ffe3ee;font-size:15px;margin-top:6px">Best couple ever ❤️</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
